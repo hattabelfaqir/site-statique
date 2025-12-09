@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,34 +11,174 @@
 </head>
 <body>
 
-<header>
-    <div id="headerBox">
-        <div class="headerImg">
-            <img src="./image/logo.png" alt="img/png" width="84px" height="31px">
-        </div>
-        <div>
-            <span>Les formations</span>
-        </div>
-<form class="search-bar">
-  <input type="search" placeholder="Rechercher" aria-label="Recherche">
-  <button type="submit" class="search-btn">
-    <i class="fa fa-search"></i>
-  </button>
-</form>
+<header class="site-header">
+    <div class="header-container">
 
-        <div class="headerBtn">
-            <button type="submit" class="headerBtnCon">
-                Connexion
-            </button>
-            <button type="submit" class="headerBtnIns">
-                Inscription
-            </button>
+        <div class="header-logo">
+            <img src="./image/logo.png" alt="Logo Klivio" width="84" height="31">
         </div>
+
+        <button class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="header-nav" aria-label="Navigation principale">
+            <ul>
+                <li><a href="#formations">Les formations</a></li>
+            </ul>
+        </nav>
+
+        <form class="search-bar" role="search">
+            <input type="search" placeholder="Rechercher" aria-label="Rechercher une formation">
+            <button type="submit" class="search-btn">
+                <i class="fa fa-search"></i>
+            </button>
+        </form>
+
+        <div class="header-actions">
+            <button class="headerBtnCon">Connexion</button>
+            <button class="headerBtnIns">Inscription</button>
+        </div>
+
+    </div>
+</header>
+
+
+<section id="site-section">
+
+  <div class="section-box">
+    <div class="section-img">
+      <div class="section-text">
+        <h1>Klivio, l’allié de votre progression</h1>
+        <p>Les meilleures formations en développement personnel</p>
+        <div>
+            <button type="button">En savoir plus</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="section-Box-probuit">
+
+    <div class="section-BoxText">
+        Les formations populaires
     </div>
 
-</header>
-    
+<div id="BoxTout">
+    <div class="Boxe">
 
-    <script src="/index.js"></script>
+        <div class="Boxe-img">
+            <img src="./image/img-course.png" alt="Image du cours">
+
+            <div class="Boxe-Prix">
+                <h4>15,99 €</h4>
+                <p>60 €</p>
+            </div>
+        </div>
+
+        <div class="Boxe-ex">
+            <h5>Parler en public</h5>
+            <p class="auteur">Sonia Lefèvre | Coach prise de parole</p>
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p class="desc">
+                Gagnez en aisance et captez votre auditoire
+            </p>
+        </div>
+
+    </div>
+    <div class="Boxe">
+
+        <div class="Boxe-img">
+            <img src="./image/img-course.png" alt="Image du cours">
+
+            <div class="Boxe-Prix">
+                <h4>15,99 €</h4>
+                <p>60 €</p>
+            </div>
+        </div>
+
+        <div class="Boxe-ex">
+            <h5>Parler en public</h5>
+            <p class="auteur">Sonia Lefèvre | Coach prise de parole</p>
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p class="desc">
+                Gagnez en aisance et captez votre auditoire
+            </p>
+        </div>
+
+    </div>
+    <div class="Boxe">
+
+        <div class="Boxe-img">
+            <img src="./image/img-course.png" alt="Image du cours">
+
+            <div class="Boxe-Prix">
+                <h4>15,99 €</h4>
+                <p>60 €</p>
+            </div>
+        </div>
+
+        <div class="Boxe-ex">
+            <h5>Parler en public</h5>
+            <p class="auteur">Sonia Lefèvre | Coach prise de parole</p>
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p class="desc">
+                Gagnez en aisance et captez votre auditoire
+            </p>
+        </div>
+
+    </div>
+    <div class="Boxe">
+
+        <div class="Boxe-img">
+            <img src="./image/img-course.png" alt="Image du cours">
+
+            <div class="Boxe-Prix">
+                <h4>15,99 €</h4>
+                <p>60 €</p>
+            </div>
+        </div>
+
+        <div class="Boxe-ex">
+            <h5>Parler en public</h5>
+            <p class="auteur">Sonia Lefèvre | Coach prise de parole</p>
+
+            <div class="stars">
+                ⭐⭐⭐⭐⭐
+            </div>
+
+            <p class="desc">
+                Gagnez en aisance et captez votre auditoire
+            </p>
+        </div>
+
+    </div>
+    <div id="">
+
+    </div>
+</div>
+
+
+</div>
+</section>
+
+
+
+
+<script src="./index.js"></script>
 </body>
 </html>
