@@ -6,7 +6,8 @@
     <title>Klivio — Formations en ligne</title>
     <meta name="description" content="Plateforme de formations en ligne — Klivio">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -18,28 +19,33 @@
             <img src="./image/logo.png" alt="Logo Klivio" width="84" height="31">
         </div>
 
-        <button class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <button class="burger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
+      
+        <div class="mobile-menu">
+          <button class="headerBtnCon">Connexion</button>
+          <button class="headerBtnIns">Inscription</button>
+        </div>
 
         <nav class="header-nav" aria-label="Navigation principale">
             <ul>
-                <li><a href="#formations">Les formations</a></li>
+                <li>Les formations</li>
             </ul>
         </nav>
 
         <form class="search-bar" role="search">
             <input type="search" placeholder="Rechercher" aria-label="Rechercher une formation">
             <button type="submit" class="search-btn">
-                <i class="fa fa-search"></i>
+                <img src="./image/lopeIcon.svg">
             </button>
         </form>
 
         <div class="header-actions">
-            <button class="headerBtnCon">Connexion</button>
-            <button class="headerBtnIns">Inscription</button>
+            <button class="headerBtnCon" type="submit">Connexion</button>
+            <button class="headerBtnIns" type="submit">Inscription</button>
         </div>
 
     </div>
@@ -228,32 +234,32 @@
   
       <ul class="klivio-boxs">
         <li class="klivio-section">
-          <img src="./image/Icon.svg" alt="" />
+          <img src="./image/Icon.svg" />
           <span>Suivi de sa progression</span>
         </li>
   
         <li class="klivio-section">
-          <img src="./image/stilo.svg" alt="" />
+          <img src="./image/stilo.svg" />
           <span>Exercices et QCM pour la mise en pratique</span>
         </li>
   
         <li class="klivio-section">
-          <img src="./image/teleIcon.svg" alt="" />
+          <img src="./image/teleIcon.svg" />
           <span>Téléchargement et impression des formations</span>
         </li>
   
         <li class="klivio-section">
-          <img src="./image/etoileIcon.svg" alt="" />
+          <img src="./image/etoileIcon.svg" />
           <span>Contenu qualitatif et vérifié</span>
         </li>
   
         <li class="klivio-section">
-          <img src="./image/herIcon.svg" alt="" />
+          <img src="./image/herIcon.svg" />
           <span>Accès 24h/24 et 7j/7</span>
         </li>
   
         <li class="klivio-section">
-          <img src="./image/smmsIcon.svg" alt="" />
+          <img src="./image/smmsIcon.svg" />
           <span>Espaces d’échanges dédiés</span>
         </li>
       </ul>
@@ -303,28 +309,126 @@
     </ul>
   </section>
 
-  <section id="box-propos">
-      <div class="box-proposs">
-       <h2 class="propos-titre">À propos de Klivio</h2>          
-        <ul class="propos-boxs">
-          <li class="propos-section">
-            <span>
-              Chez Klivio, nous défendons des valeurs fondamentales qui définissent notre approche éducative. Nous nous engageons à assurer une rémunération équitable pour les créateurs de contenu, reconnaissant la qualité de leur travail. <br><br>
-              Favorisant l'autonomie d'apprentissage, notre plateforme offre la flexibilité  écessaire pour explorer divers sujets. La transparence est au cœur de notre démarche, garantissant une clarté totale sur les formations que les instructeurs proposent. Ensemble, ces valeurs forment le socle d'une  ducation enrichissante et équitable, guidant notre mission d'offrir des pportunités d'apprentissage de qualité.
-            </span>
-          </li>
-        </ul>
-      </div>
-      <div class="propos-image">
-        <div class="propos-img">
-          <img src="./image/logo.png" alt="pmg/img">
-        </div>
-      </div>
-  </section>
+<section id="box-propos">
+  <div class="box-propos-content">
+    <h2 class="propos-titre">À propos de Klivio</h2>
 
+    <p class="propos-texte">
+      Chez Klivio, nous défendons des valeurs fondamentales qui définissent notre
+      approche éducative. Nous nous engageons à assurer une rémunération équitable
+      pour les créateurs de contenu, reconnaissant la qualité de leur travail.
+      <br><br>
+      Favorisant l'autonomie d'apprentissage, notre plateforme offre la flexibilité
+      nécessaire pour explorer divers sujets. La transparence est au cœur de notre
+      démarche, garantissant une clarté totale sur les formations proposées.
+      Ensemble, ces valeurs forment le socle d’une éducation enrichissante et
+      équitable, guidant notre mission d’offrir des opportunités d’apprentissage
+      de qualité.
+    </p>
+  </div>
+
+  <div class="propos-image">
+    <img src="./image/logo.png" alt="Logo Klivio">
+  </div>
+</section>
+
+
+<section id="box-contacter">
+
+  <div class="boxs-contacter">
+
+    <h1 class="contacter-titre">
+      Nous contacter
+    </h1>
+
+    <div class="box-contacter-liner">
+      <div class="contacter-liner"></div>
+    </div>
+
+  </div>
+
+  <div class="box-information">
+    <form class="box-informations">
+      <input type="text" placeholder="Nom" class="box-informations-input">
+      <input type="email" placeholder="Email" class="box-informations-input">
+    </form>
+  </div>
+
+  
+  <div class="box-information-message">
+    <div class="box-message">
+      <input type="text" placeholder="message" class="box-message-placeholder">
+    </div>
+  </div>
+
+  <div class="box-information-submit">
+    <button class="box-btn" type="submit">Envoyer</button>
+  </div>
+
+</section>
 </main>
 
 
-<script src="./index.js"></script>
+<footer id="footer">
+  <div class="footer-bar"></div>
+
+  <div class="footer-container">
+    <div class="footer-top">
+
+      <div class="footer-logo">
+        <img src="./image/logo.png" alt="Logo Klivio" width="235">
+      </div>
+
+      <nav class="footer-nav">
+        <ul class="footer-list">
+          <li class="footer-title">Mentions légales</li>
+          <li><a href="#">CGU</a></li>
+          <li><a href="#">CGV</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+        <ul class="footer-list">
+          <li class="footer-title">Coordonnées</li>
+          <p class="footer-lists">
+            <img src="./image/gpsIcon.svg">
+              1 place République,<br>75003 Paris
+          </p>
+          <p class="footer-lists">
+            <img src="./image/telIcon.svg">
+             01.02.03.04.05
+          </p>
+          <p class="footer-lists">
+            <img src="./image/smsIcon.svg">
+             contact@klivio.fr
+          </p>
+        </ul>
+      </nav>
+
+      <div class="footer-actions">
+        <button class="btn btn-light">Connexion</button>
+        <button class="btn btn-gradient">Inscription</button>
+      </div>
+
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+      <span>© Klivio - 2025</span>
+
+      <div class="footer-social">
+        <span>Suivez-nous</span>
+        <div class="social-icons">
+          <img src="./image/f.svg" alt="Facebook">
+          <img src="./image/X.svg" alt="X">
+          <img src="./image/INSTAGRAME.svg" alt="Instagram">
+          <img src="./image/LINKB.svg" alt="LinkedIn">
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="./js.js"></script>
 </body>
 </html>
